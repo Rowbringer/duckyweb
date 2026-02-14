@@ -83,8 +83,7 @@
 
         .leadership-grid {
             display: grid;
-            /* Changed to auto-fit to handle the third member better */
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
             margin-top: 30px;
         }
@@ -107,6 +106,59 @@
             color: #555;
         }
 
+        .download-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            margin-top: 40px;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--ducky-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid var(--ducky-blue);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .download-btn:hover {
+            background: white;
+            color: var(--ducky-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 168, 232, 0.3);
+        }
+
+        .platform-label {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--deep-slate);
+        }
+
+        .system-badge {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 5px;
+            display: block;
+        }
+
         footer {
             text-align: center;
             padding: 40px;
@@ -120,7 +172,7 @@
     <header>
         <div class="hero-duck">🦆</div>
         <h1>DUCKY WEB</h1>
-        <p class="subtitle">Coming Soon to the Digital Horizon</p>
+        <p class="subtitle">Now Officially Released</p>
     </header>
 
     <div class="container">
@@ -149,6 +201,22 @@
                 <div class="leader-card">
                     <h3>Sparks</h3>
                     <p class="role">Developer<br>TopDucky Entertainment</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <h2>Ducky Web Browser — Official Release</h2>
+            <p>
+                Ducky Web is now fully released and available for Windows.  
+                Download the latest version below and experience the next generation of browsing.
+            </p>
+
+            <div class="download-grid">
+                <div>
+                    <span class="platform-label">⊞ Windows</span>
+                    <a href="https://f2h.io/1mhrxbwpc7ku" class="download-btn">Download (Direct)</a>
+                    <span class="system-badge">Windows 10 & 11</span>
                 </div>
             </div>
         </section>
